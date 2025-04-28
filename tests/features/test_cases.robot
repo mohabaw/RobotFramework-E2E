@@ -17,8 +17,8 @@ Test de login KO
 Commander un produit - multinavigateurs
     [Template]    Commander un produit - multinavigateurs template
     firefox
-    chrome
     edge
+    chrome
 
 *** Keywords ***
 Commander un produit - multinavigateurs template

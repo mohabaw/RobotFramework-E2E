@@ -22,10 +22,14 @@ runner.bat
 ```
 
 ## Prérequis: Installations
+### Robot Framework
 - pip install robotframework
 - pip install robotframework-seleniumlibrary
 - pip install webdriver-manager
 ou bien pip install robotframework-browser puis rfbrowser init
 - pip install robotframework-faker
+
+### Navigateurs
+firefox, edge, chrome
 
 
