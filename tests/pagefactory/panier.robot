@@ -13,7 +13,6 @@ Valider le panier
 Verifier que le Client est sur la page panier
     SeleniumLibrary.Page should contain element
     ...    locator=${BANNIERE_PAGE_PANIER} 
-    # Screenshot.Take Screenshot
     Log    Je suis sur la page Panier
     Log to console  Je suis sur la page Panier
 

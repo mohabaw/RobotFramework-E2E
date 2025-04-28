@@ -1,14 +1,14 @@
 *** Settings ***
-Resource    ../../resources/common.robot
-Resource    ../../tests/stepsdefinition/parcoursE2E.robot
-Resource    ../../tests/stepsdefinition/loginKO.robot
+Resource        ../../resources/common.robot
+Resource        ../../tests/stepsdefinition/parcoursE2E.robot
+Resource        ../../tests/stepsdefinition/loginKO.robot
 
-Suite Setup  Gérer la vitesse d'execution
-Test Teardown  Tout fermer
+Suite Setup     Gérer la vitesse d'execution
+Test Teardown   Tout fermer
 
 *** Test Cases ***
 Test de login KO
-    [Tags]    E2E    LOGIN_KO
+    [Tags]   LOGIN_KO
     Le client se rend sur la page d'accueil (firefox)
     loginKO.Le Client rentre ses identifiants (username invalide)
     Le client se retrouve avec un message d'erreur type sadface
@@ -19,10 +19,6 @@ Commander un produit - multinavigateurs
     firefox
     chrome
     edge
-
-
-
-
 
 *** Keywords ***
 Commander un produit - multinavigateurs template

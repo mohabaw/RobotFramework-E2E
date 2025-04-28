@@ -1,7 +1,6 @@
 *** Settings ***
 Resource    ../../resources/common.robot
 Resource    ../../resources/variables.robot
-Library    Screenshot
 Library    FakerLibrary
 
 *** Keywords ***
@@ -16,7 +15,6 @@ Passer la premiere etape du checkout
 verifier que le Client est sur la page de chekout-Infos
     SeleniumLibrary.Page should contain element
     ...    locator=${BANNIERE_PAGE_CHECKOUT_INFO}
-    # Screenshot.Take Screenshot
     Log    Je suis sur la page du chekout-Infos
     Log to console   Je suis sur la page du chekout-Infos
 
@@ -37,7 +35,6 @@ Saisir CP Client
     SeleniumLibrary.Input text
     ...    locator=${ZIP_CODE_FIELD}  
     ...    text=${ZIP_CODE}
- 
 
 Valider les infos de checkout saisies
     SeleniumLibrary.Click element

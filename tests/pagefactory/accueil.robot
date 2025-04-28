@@ -1,10 +1,9 @@
 *** Settings ***
 Resource    ../../resources/common.robot
 Resource    ../../resources/variables.robot
-Library    Screenshot
+
 
 *** Keywords ***
-
 
 Le Client s'authentifie (${NAVIGATEUR})
     Le client se rend sur la page d'Accueil (${NAVIGATEUR})
@@ -17,7 +16,6 @@ Le client se rend sur la page d'Accueil (${NAVIGATEUR})
     ...    url=${SITE_URL}  
     ...    browser=${NAVIGATEUR}
     Maximize Browser Window
-    # Screenshot.Take Screenshot
     Log to console    Je suis sur la page d'accueil
     Log    Je suis sur la page d'accueil
 
@@ -26,7 +24,6 @@ Le client se rend sur la page d'Accueil -firefox-
     ...    url=${SITE_URL}  
     ...    browser=firefox
     Maximize Browser Window
-    # Screenshot.Take Screenshot
     Log to console    Je suis sur la page d'accueil
     Log    Je suis sur la page d'accueil
 
@@ -44,7 +41,6 @@ Le Client valide ses identifiants
 
 Verifier que le Client reste sur l'Acceuil suite erreur
     SeleniumLibrary.Page should contain    Epic sadface
-    # Screenshot.Take Screenshot
     Log to console    On est resté sur la page d'acceuil avec un message d'erreur affiché
     Log     On est resté sur la page d'acceuil avec un message d'erreur affiché
 
